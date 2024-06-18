@@ -13,14 +13,39 @@
 </head>
 <body>
     <div class="container">
-        
+      <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Mentor</h1>
+          </a>
+    
+          <nav class="navbar">
+            <div class="logo">
+              <img src="" alt="Logo">
+            </div>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <!-- <a class="btn-getstarted" href="courses.html">Get Started</a> -->
+    
+        </div>
+      </header>
     
         <div class="pic">
             <div class="inner-pic">
-                <h1>LEARN NOW<br>
+                <h1 id="hero-head">LEARN NOW<br>
                     LEAD TOMORROW
                 </h1>
-                <h2>I am an upcoming developer!</h2>
+                <h2 id="hero-text">I am an upcoming developer!</h2>
                 <button class="get-started-btn">Get started</button>
             </div>    
         </div>
@@ -31,6 +56,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
+              <ul>
+                <li><i></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                <li><i></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                <li><i></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              </ul>
               <button class="read-more">Read More</button>
             </div>
               <div class="inner-text-img">
@@ -60,6 +90,84 @@
               <br>
               <p id="counter-text"><b>Awards</b></p>
             </div>
+          </div>
+        </section>
+
+        <section class="why-us-section">
+          <div class="why-us-container">
+            <div class="big-about-us" data-aos="fade-up" data-aos-delay="100">
+              <h1 id="why-us-head">Why choose our products?</h1>
+              <p id="why-us-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              </p>
+              <button class="read-more">Read more</button>
+            </div>
+
+            <div class="small-about-us">
+              <h3 id="about-head">Corporis voluptates officia eiusmod</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            </div>
+
+            <div class="small-about-us">
+              <h3 id="about-head">Corporis voluptates officia eiusmod</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            </div>
+
+            <div class="small-about-us">
+              <h3 id="about-head">Corporis voluptates officia eiusmod</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="courses-section">
+          <div class="course-head">
+            <h1>POPULAR COURSES</h1>
+          </div>   
+          <div class="course-container">
+              <div class="inner-courses">
+                <div class="pic-course">
+                  <img src="./img/course-1.jpg" id="course-pic">
+                </div>
+                <div class="course-content">
+                  <div class="inner-course-head"><button class="course-name">Web Development</button><span><b>$169</b></span></div> 
+                  <h1>Web Design</h1>
+                  <p id="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                  <hr>
+                  <div class="course-info">
+                    <div class="course-info-pfp">
+                      <img src="./img/trainers/trainer-1-2.jpg" id="pfp"> <span class="james"><p>James</p></span>
+                    </div>
+                    <div class="likes">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor">
+                        <path stroke-linejoin="round" d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
+                        <circle cx="12" cy="7" r="3" />
+                      </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 256">
+                      <path fill="currentColor" d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62m-50 174.8c-18.26-10.64-96-59.11-96-112.8a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8" />
+                    </svg>
+                  </div>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="inner-courses">
+                <div class="pic-course">
+                  <img src="./img/course-2.jpg" id="course-pic">
+                </div>
+              </div>
+
+              <div class="inner-courses">
+                <div class="pic-course">
+                  <img src="./img/course-3.jpg" id="course-pic">
+                </div>
+              </div>
           </div>
         </section>
     </div> 

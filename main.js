@@ -10,12 +10,40 @@ counters.forEach((counter, index) => {
     } else {
       clearInterval(interval);
     }
-  }, 0.4);
+  }, 1);
 });
 
-function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  }
+
+
+
+const smallAboutUsElements = document.querySelectorAll('.small-about-us');
+
+window.addEventListener('scroll', () => {
+  smallAboutUsElements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      element.classList.add('scroll-in');
+    } else {
+      element.classList.remove('scroll-in');
+    }
+  });
+});
+
+const heroHeadElement = document.querySelector('.hero-head');
+const heroTextElement = document.querySelector('.hero-text');
+const getStartedBtnElement = document.querySelector('.get-started-btn');
+
+const elementsToAnimate = [heroHeadElement, heroTextElement, getStartedBtnElement];
+
+window.addEventListener('scroll', () => {
+  elementsToAnimate.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    if (isInView) {
+      element.classList.add('scroll-in');
+    } else {
+      element.classList.remove('scroll-in');
+    }
+  });
+});
