@@ -279,7 +279,6 @@ h2{
 
 .courses-section{
   width: 100;
-  border: solid 3px blue;
   height: 700px;
   padding: 60px;
 }
@@ -287,21 +286,24 @@ h2{
 .course-container{
   display: flex;
   justify-content: space-between;
-  border:  solid 3px red;
   height: 95%;
+  margin-top: 10px;
 }
 
-#courses-head{
 
-}
 
 .inner-courses{
   display: flex;
   flex-direction: column;
-  border: solid 3px green;
+  border: solid 1px rgb(218, 218, 218);
+  border-radius: 10px;
   height: 100%;
   width: 350px;
-  border-radius: 0 0 10px 10px;
+  transition: transform 0.5s;
+}
+
+.inner-courses:hover {
+  transform: scale(1.1);
 }
 
 .pic-course{
@@ -315,12 +317,11 @@ h2{
 }
 
 .course-content{
-  border: #09c9da solid 2px;
   height: 50%;
   padding: 15px;
 }
+
 .inner-course-head{
-  border: #09da0c solid 2px;
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -335,11 +336,16 @@ span{
 }
 
 .course-name{
-  padding: 5px;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #09c9da;
   color: white;
   border-radius: 5px;
   border-style: none;
+  cursor: pointer;
 }
 
 #description{
@@ -347,28 +353,222 @@ span{
 }
 
 #pfp{
-  height: 50px;
+  height: 100%;
   width: 50px;
   border-radius: 50px;
 }
 
 .course-info-pfp{
-  margin-top: 20px;
-  width: 70px;
+  width:100px;
+  height: 100%;
   display: flex;
   align-items: center;
-  border:solid 3px firebrick;
 }
+
 .course-info{
   width: 100%;
   display: flex;
   flex-direction: row;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .likes{
   height: 100%;
-  margin-left: 30px;
+  margin-left: 112px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .james{
   margin-left: 10px;
 }
+
+/* ***********COURSES SECTION END********** */
+
+
+/* ***********TRAINERS SECTION START********** */
+
+.trainers-section{
+  height: 600px;
+  padding: 60px;
+}
+
+.trainers-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainers-head{
+  /* margin-bottom: 40px; */
+  width: 100%;
+  padding-left: 60px;
+  color: #09c9da;
+}
+
+.inner-trainers{
+  height: 100%;
+  border: solid 1px rgb(218, 218, 218);
+  width: 250px;
+  border-radius:10px;
+  transition: transform 1s
+}
+
+.inner-trainers:hover {
+  transform: scale(1.2);
+}
+
+.inner-trainers-picture{
+  height: 50%;
+  background-position: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#inner-trainers-image{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.trainers-content{
+  padding: 20px;
+  text-align: center;
+  height: 50%;
+  display: grid;
+  place-items: center;
+}
+
+
+.contact-trainer{
+  margin-top: 10px;
+  color: white;
+  background-color: #09c9da;
+  border-style: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* ***********TRAINERS SECTION END********** */
+
+
+
+/* ***********ABOUT PAGE START********** */
+
+.aboutpage-container{
+  height: 100%;
+  width: 100%;
+}
+
+.aboutpage-huge-hero{
+  height: 300px;
+  width: 100%;
+  margin-top: 40px;
+  background-color: #09c9da;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.about-section{
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.about-fill{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.about-text{
+  height: 100%;
+  width: 70%;
+  padding: 50px;
+}
+
+li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#check-mark{
+  height: 20px;
+  width: 20px;
+}
+
+
+/* **********Caurosel start*********** */
+
+.outer-carousel-container{
+  width: 100%;
+  padding: 50px;
+  height: 400px;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 calc(50% - 20px); 
+  height: 100%; 
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  border-radius: 10px;
+}
+
+#testimonial-img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  border: solid 3px #ccc;
+}
+
+.carousel-item-content{
+  width: 80%;
+  margin-left:20px;
+}
+
+#rating-stars{
+  width: 100px;
+  height: 20px;
+}
+
+
+
+
+
+/* *********FOOTER*********** */
+
+
+
+

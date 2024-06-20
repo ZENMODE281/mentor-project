@@ -47,3 +47,37 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carouselTrack = document.querySelector('.carousel-track');
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  const totalItems = carouselItems.length;
+  let index = 0;
+
+  function moveCarousel() {
+    const itemWidth = carouselItems[0].getBoundingClientRect().width + 20; // Width of item + margin
+    index = (index + 2) % totalItems; // Move by 2 items
+    const translateValue = -1 * index * itemWidth;
+    carouselTrack.style.transform = `translateX(${translateValue}px)`;
+  }
+
+  setInterval(moveCarousel, 10000); // Move every 10 seconds
+
+  // Recalculate on window resize
+  window.addEventListener('resize', function() {
+    moveCarousel();
+  });
+});
+
+
