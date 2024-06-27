@@ -62,11 +62,11 @@ body{
 }
 
 .navbar a:hover {
-  color: #007bff;
+  color: #09c9da;
 }
 
 .navbar a.active {
-  color: #007bff;
+  color: #09c9da;
 }
 /* HEAD END */
 
@@ -133,6 +133,7 @@ h2{
   border-style: none;
   border-radius: 20px;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .read-more:hover{
@@ -460,6 +461,110 @@ span{
 
 
 
+/* ***********FOOTER START********** */
+
+.footer{
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container{
+  height: 70%;
+  width: 100%;
+}
+
+.footer-row{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.footer-col{
+  width: 25%;
+  height: 100%;
+  margin-right: 150px;
+}
+
+.socials{
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#socials{
+  margin-left: 5px;
+}
+
+.footer-col2{
+  height: 100%;
+  width: 15%;
+  margin-left: 10px;
+}
+
+#footer-links{
+  color: #333;
+  text-decoration: none;
+}
+
+#footer-links:hover{
+  color: #09c9da;
+}
+
+.newsletter{
+  width: 450px;
+  margin-left: 10px;
+}
+
+.newsletter-form{
+  margin-top: 20px;
+  border-radius: 50px;
+  height: 50px;
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#subscribe{
+  background-color: #09c9da;
+  color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.copyright{
+  width: 100%;
+  height: 50%;
+  margin-top: 120px;
+  background-color: rgb(221, 221, 221);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#copyright-name{
+  color: #09c9da;
+}
+
+a {
+  text-decoration: none;
+  color: #09c9da;
+}
 /* ***********ABOUT PAGE START********** */
 
 .aboutpage-container{
@@ -514,6 +619,12 @@ li{
   width: 20px;
 }
 
+.test{
+  color: #09c9da;
+  width: 30%;
+  margin-left: 60px;
+  margin-top: 30px;
+}
 
 /* **********Caurosel start*********** */
 
@@ -567,8 +678,78 @@ li{
 
 
 
-/* *********FOOTER*********** */
+/* *********Trainers page start*********** */
+
+
+.trainers-page-section{
+  width: 100%;
+  height: 800px;
+  border: solid blue 3px;
+  padding: 80px;
+}
+
+
+.trainers-con{
+  height: 100%;
+  width: 100%;
+  border: solid red 2px;
+}
 
 
 
+.trainers-row{
+  border: solid green 2px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
 
+.trainers-page-content{
+  border: solid blue 3px;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#round-trainers{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+
+.hover-pic {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hover-pic:hover .overlay {
+  opacity: 0.5;
+}
+
+/* #trainers-page-contact-btn{
+  padding:10px 30px 10px 30px;
+  background-color: #09c9da;
+  color: white;
+  border-style: none;
+  margin-top: 10px;
+} */

@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     carouselTrack.style.transform = `translateX(${translateValue}px)`;
   }
 
-  setInterval(moveCarousel, 10000); // Move every 10 seconds
+  setInterval(moveCarousel, 5000); // Move every 5 seconds
 
   // Recalculate on window resize
   window.addEventListener('resize', function() {
