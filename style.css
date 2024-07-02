@@ -24,6 +24,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px;
   background-color: #fff;
   padding: 10px;
   display: flex;
@@ -684,7 +685,6 @@ li{
 .trainers-page-section{
   width: 100%;
   height: 800px;
-  border: solid blue 3px;
   padding: 80px;
 }
 
@@ -692,13 +692,11 @@ li{
 .trainers-con{
   height: 100%;
   width: 100%;
-  border: solid red 2px;
 }
 
 
 
 .trainers-row{
-  border: solid green 2px;
   width: 100%;
   height: 50%;
   display: flex;
@@ -706,7 +704,6 @@ li{
 }
 
 .trainers-page-content{
-  border: solid blue 3px;
   height: 100%;
   width: 30%;
   display: flex;
@@ -716,35 +713,43 @@ li{
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
 }
 
 #round-trainers{
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin-bottom: 10px;
 }
 
-
-.hover-pic {
-  position: relative;
+#trainers-page-contact-btn{
+  color: white;
+  background-color: #09c9da;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  border-radius: 50px;
+  border-style: none;
+  margin-top: 10px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0;
-  transition: opacity 0.3s;
+
+#trainers-page-contact-btn:hover {
+  background-color: white;
+  color: #09c9da;
+  border: solid grey 1px;
+  cursor: pointer;
 }
 
-.hover-pic:hover .overlay {
-  opacity: 0.5;
-}
+
+
+
+
+
 
 /* #trainers-page-contact-btn{
   padding:10px 30px 10px 30px;
@@ -753,3 +758,166 @@ li{
   border-style: none;
   margin-top: 10px;
 } */
+
+
+/* *********Trainers page end*********** */
+
+
+
+
+/* *********Events page start*********** */
+
+.events-section{
+  height: 600px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.events-con{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inner-events{
+  height: 100%;
+  width: 40%;
+}
+
+#events-pic{
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+
+.events-text{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  transform: translate( 20%, -30%);
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  transition: ease 0.2s;
+  font-size: 13px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.events-text:hover{
+  color: white;
+  background-color: #09c9da;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+#events-btn{
+  background-color: #09c9da;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  border:white 1px solid;
+  transition: ease 0.2s;
+  color: white;
+  margin-top: 10px;
+}
+
+#events-btn:hover{
+  background-color: white;
+  color: #09c9da;
+  cursor: pointer;
+}
+
+#eve-txt{
+  margin-top: 10px;
+}
+
+.events-con2{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 20px;
+} */
+
+
+
+/* *********scroll in*********** */
+
+.section {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.section.scroll-in {
+  animation: fadeInAndSlideUp 1s forwards;
+}
+
+@keyframes fadeInAndSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* *********Events page end*********** */
+
+/* *********Pricing page start*********** */
+
+.pricing-section{
+  height: 550px;
+  width: 100%;
+  border: solid red 2px;
+  padding: 50px;
+} 
+
+.pricing-con{
+  height: 100%;
+  width: 100%;
+  border: solid green 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-pricing{
+  height: 100%;
+  width: 300px;
+  border: #bcb9b9 solid 2px;
+  border-radius: 20px;
+}
+
+#pricing-head{
+  background-color: #ebebeb;
+  padding: 20px 15px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  text-align: center;
+  width: 100%;
+  color: #6b6969;
+}
+
+#pricing
