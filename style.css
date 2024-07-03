@@ -891,23 +891,26 @@ li{
 .pricing-section{
   height: 550px;
   width: 100%;
-  border: solid red 2px;
+  border:  red 2px;
   padding: 50px;
 } 
 
 .pricing-con{
   height: 100%;
   width: 100%;
-  border: solid green 2px;
+  border:  green 2px;
   display: flex;
   justify-content: space-between;
 }
 
 .inner-pricing{
-  height: 100%;
+  height: 87%;
   width: 300px;
   border: #bcb9b9 solid 2px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #pricing-head{
@@ -920,4 +923,60 @@ li{
   color: #6b6969;
 }
 
-#pricing
+#pricing-head-paid{
+  background-color: #09c9da;
+  padding: 20px 15px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+
+#price{
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#fade-txt{
+  opacity: 0.5;
+}
+
+#pricing-bene{
+  margin-top: 20px;
+}
+
+.pricing-btn{
+  width: 100%;
+  height: 50px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  margin-top: 10px;
+}
+
+#p-c{
+  padding: 5px 15px;
+  color: white;
+  background-color: #09c9da;
+  border-radius: 20px;
+  border-style: none;
+  transition: ease 0.2s;
+}
+
+#p-c:hover{
+  background-color: white;
+  color: #09c9da;
+  cursor: pointer;
+}
+
+
+
+
+

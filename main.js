@@ -16,7 +16,7 @@ counters.forEach((counter, index) => {
 
 
 
-const smallAboutUsElements = document.querySelectorAll('.small-about-us');
+const smallAboutUsElements = document.querySelectorAll('.small-about-us, .inner-pricing');
 
 window.addEventListener('scroll', () => {
   smallAboutUsElements.forEach((element) => {
@@ -85,20 +85,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-const sections = document.querySelectorAll('.section');
-
-  window.addEventListener('scroll', () => {
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const windowHeight = window.innerHeight;
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition >= sectionTop - windowHeight && scrollPosition < sectionTop + sectionHeight) {
-        section.classList.add('scroll-in');
-      }
-    });
-  });
 
 
