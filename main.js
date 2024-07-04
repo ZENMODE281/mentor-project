@@ -16,7 +16,7 @@ counters.forEach((counter, index) => {
 
 
 
-const smallAboutUsElements = document.querySelectorAll('.small-about-us, .inner-pricing');
+const smallAboutUsElements = document.querySelectorAll('.small-about-us,  .inner-trainers, .carousel-container, .trainers-row');
 
 window.addEventListener('scroll', () => {
   smallAboutUsElements.forEach((element) => {

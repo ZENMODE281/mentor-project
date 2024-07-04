@@ -98,11 +98,13 @@ h2{
     border: solid white 3px;
     border-radius: 20px;
     color: white;
+    transition: ease 0.2s;
 }
 
 .get-started-btn:hover{
-  background-color: #09c9da;
-  border-style: none;
+  background-color: white;
+  color: rgb(150, 149, 149);
+  cursor: pointer;
 }
 /* ***************HERO END**************** */
 
@@ -135,12 +137,13 @@ h2{
   border-radius: 20px;
   cursor: pointer;
   margin-top: 5px;
+  transition: ease 0.2s;
 }
 
 .read-more:hover{
-  border: solid 2px;
+  border: solid #09c9da 2px;
   background-color: white;
-  color: black;
+  color: #09c9da;
   cursor: pointer;
 }
 
@@ -257,13 +260,13 @@ h2{
 /* **************WHY US END************** */
 
 /* **************FADE IN************** */
-.small-about-us {
+.small-about-us,  .inner-trainers, .carousel-container, .trainers-row{
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.small-about-us.scroll-in {
+.small-about-us.scroll-in,  .inner-trainers.scroll-in, .carousel-container.scroll-in, .trainers-row.scroll-in{
   animation: fadeInAndSlideUp 1s forwards;
 }
 
@@ -289,7 +292,7 @@ h2{
   display: flex;
   justify-content: space-between;
   height: 95%;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 
@@ -383,6 +386,9 @@ span{
   align-items: center;
   justify-content: space-between;
 }
+#heart{
+  margin-left: 10px;
+}
 .james{
   margin-left: 10px;
 }
@@ -390,10 +396,13 @@ span{
 /* ***********COURSES SECTION END********** */
 
 
+#colored-head{
+  color: #09c9da;
+}
 /* ***********TRAINERS SECTION START********** */
 
 .trainers-section{
-  height: 600px;
+  height: 620px;
   padding: 60px;
 }
 
@@ -455,6 +464,14 @@ span{
   width: 100px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.2s easew;
+}
+
+
+.contact-trainer:hover{
+  border: #09c9da solid 2px;
+  color: #09c9da;
+  background-color: white;
 }
 
 
@@ -976,7 +993,66 @@ li{
   cursor: pointer;
 }
 
+#course-link{
+  color: white;
+}
 
 
 
+/* *********Pricing page end*********** */
 
+
+
+/* *********course-details page start*********** */
+
+
+.course-details-section{
+  height: 800px;
+  width: 100%;
+  padding: 60px;
+  display: flex;
+}
+
+.course-explanation{
+  height: 100%;
+  width: 65%;
+  padding: 20px;
+}
+
+.course-small{
+  width: 35%;
+  height: 100%;
+  padding: 20px;
+}
+
+#course-details-pic{
+  width: 100%;
+}
+
+.smaller-course{
+  background-color: #eaeaea;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.small-course-txt{
+  color: #09c9da;
+}
+
+.course-details-head{
+  width: 600px;
+}
+
+#colored-line{
+  height: 2px;
+  background-color: #09c9da;
+  border: #09c9da ;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
