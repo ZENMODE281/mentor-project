@@ -1078,14 +1078,12 @@ li{
 
 
 .checkout-section{
-  height: 800px;
+  height: 830px;
   width: 100%;
-  border: solid red 1px;
   padding: 50px;
 }
 
 .checkout-container{
-  border: solid blue 1px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1101,15 +1099,92 @@ li{
 }
 
 .horizontal-space{
-  border: blue solid 1px;
   margin-top: 50px;
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 #name{
-  width: 400px;
+  width: 100%;
   border-radius: 5px;
+}
+
+.left-horizontal{
+  width:40%;
+}
+
+#label-txt{
+  margin-bottom: 10px;
+}
+
+.second-horizontal, .third-horizontal{
+  width: 100%;
+  height: 90px;
+  margin-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.inner-horizontal{
+  width: 40%;
+  height: 50px;
+}
+
+.third-horizontal{
+  display: flex;
+  justify-content: space-between;
+}
+
+#card-type{
+  height: 50px;
+  width: 200px;
+}
+
+.inner-horizontal1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#colored-head-txt{
+  color: #09c9da;
+}
+
+.colored-head-space{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.checkout-btn-space{
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.checkout-btn{
+  padding: 10px 100px 10px 100px;
+  color: white;
+  background-color: #09c9da;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+.checkout-btn:hover{
+  background-color: white;
+  color: #09c9da;
+  border: solid 1px #09c9da;
 }

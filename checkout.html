@@ -15,11 +15,65 @@
         <section class="checkout-section">
             <div class="checkout-container">
                 <div class="checkout-form-con">
+                    <div class="colored-head-space">
+                        <h3 id="colored-head-txt">MENTOR</h3>
+                    </div>    
                     <div class="horizontal-space">
-                        <textfield>
-                            <input type="text" name="name" id="name" placeholder="First Name">
-                            <input type="text" name="name" id="name" placeholder="Last Name">
-                        </textfield>
+                        <div class="left-horizontal">
+                            <label>First Name</label>
+                            <textfield>
+                                <input type="text" name="name" id="name" placeholder="First Name">
+                            </textfield>
+                        </div>    
+                        <div class="left-horizontal">
+                            <label>Last Name</label>
+                            <textfield>
+                                <input type="text" name="name" id="name" placeholder="Last Name">
+                            </textfield>
+                        </div>   
+                    </div>
+
+                    <div class="second-horizontal">
+                        <label>Email Address</label>
+                        <input type="email" name="name" id="name" placeholder="Email Address">
+                    </div>
+
+
+                    <div class="third-horizontal">
+                        <div class="inner-horizontal1">
+                            <label>Card Type</label>
+                            <select name="card-type" id="card-type">
+                              <option value="">Select Card Type</option>
+                              <option value="visa">Visa</option>
+                              <option value="mastercard">Mastercard</option>
+                              <option value="amex">American Express</option>
+                              <option value="discover">Discover</option>
+                            </select>
+                          </div>
+
+                        <div class="inner-horizontal">
+                            <label>Card Number</label>
+                            <input type="text" name="name" id="name" placeholder="Card Number">
+                        </div>
+                    </div>
+
+                    <div class="horizontal-space">
+                        <div class="left-horizontal">
+                            <label>Phone Number</label>
+                            <textfield>
+                                <input type="text" name="name" id="name" placeholder="Phone Number">
+                            </textfield>
+                        </div>    
+                        <div class="left-horizontal">
+                            <label>Password (8 required characters)</label>
+                            <textfield>
+                                <input type="password" name="name" id="name" placeholder="Password">
+                            </textfield>
+                        </div>   
+                    </div>
+
+                    <div class="checkout-btn-space">
+                        <button class="checkout-btn">Checkout</button>
                     </div>
                 </div>
             </div>
