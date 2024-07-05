@@ -464,7 +464,7 @@ span{
   width: 100px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.2s easew;
+  transition: 0.2s ease;
 }
 
 
@@ -549,6 +549,7 @@ input{
   width: 100%;
   height: 50px;
   border-radius: 50px;
+  padding: 10px;
 }
 
 #subscribe{
@@ -752,13 +753,14 @@ li{
   border-radius: 50px;
   border-style: none;
   margin-top: 10px;
+  transition: 0.2s ease;
 }
 
 
 #trainers-page-contact-btn:hover {
   background-color: white;
   color: #09c9da;
-  border: solid grey 1px;
+  border: solid #09c9da 1px;
   cursor: pointer;
 }
 
@@ -1027,6 +1029,7 @@ li{
 
 #course-details-pic{
   width: 100%;
+  height: 400px;
 }
 
 .smaller-course{
@@ -1055,4 +1058,58 @@ li{
   border: #09c9da ;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+#events-link{
+  text-decoration: none;
+  color: white;
+}
+
+
+#events-link:hover{
+  color: #09c9da;
+}
+
+
+/* *********course-details page end*********** */
+
+
+/* *********checkout page start*********** */
+
+
+.checkout-section{
+  height: 800px;
+  width: 100%;
+  border: solid red 1px;
+  padding: 50px;
+}
+
+.checkout-container{
+  border: solid blue 1px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-form-con{
+  height: 100%;
+  width: 80%;
+  background-color: #efebeb;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.horizontal-space{
+  border: blue solid 1px;
+  margin-top: 50px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name{
+  width: 400px;
+  border-radius: 5px;
 }
