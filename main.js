@@ -49,16 +49,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const carouselTrack = document.querySelector('.carousel-track');
   const carouselItems = document.querySelectorAll('.carousel-item');
@@ -79,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
     moveCarousel();
   });
 });
-
 
 
 

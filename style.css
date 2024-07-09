@@ -1188,3 +1188,39 @@ li{
   color: #09c9da;
   border: solid 1px #09c9da;
 }
+
+
+
+/* *********checkout page end*********** */
+
+
+/* *********contact page start*********** */
+
+.contact-page-section{
+  height: 700px;
+  border: solid 2px red;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-contact-page-container{
+  height: 100%;
+  width: 30%;
+  padding: 30px;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  border: solid #a8a8a8 1px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-page-picture{
+  height: 250px;
+  border-radius: 200px;
+  width: 250px;
+}
