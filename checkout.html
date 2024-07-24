@@ -23,20 +23,20 @@
                         <div class="left-horizontal">
                             <label>First Name</label>
                             <textfield>
-                                <input type="text" name="name" id="name" placeholder="First Name">
+                                <input type="text" name="name" id="name" placeholder="First Name" required>
                             </textfield>
                         </div>    
                         <div class="left-horizontal">
                             <label>Last Name</label>
                             <textfield>
-                                <input type="text" name="name" id="name" placeholder="Last Name">
+                                <input type="text" name="name" id="name" placeholder="Last Name" required>
                             </textfield>
                         </div>   
                     </div>
 
                     <div class="second-horizontal">
                         <label>Email Address</label>
-                        <input type="email" name="name" id="name" placeholder="Email Address">
+                        <input type="email" name="name" id="name" placeholder="Email Address" required>
                     </div>
 
 
@@ -54,7 +54,7 @@
 
                         <div class="inner-horizontal">
                             <label>Card Number</label>
-                            <input type="text" name="name" id="name" placeholder="Card Number">
+                            <input type="text" name="name" id="name" placeholder="Card Number" required>
                         </div>
                     </div>
 
@@ -62,19 +62,27 @@
                         <div class="left-horizontal">
                             <label>Phone Number</label>
                             <textfield>
-                                <input type="text" name="name" id="name" placeholder="Phone Number">
+                                <input type="text" name="name" id="name" placeholder="Phone Number" required>
                             </textfield>
                         </div>    
                         <div class="left-horizontal">
                             <label>Password (8 required characters)</label>
                             <textfield>
-                                <input type="password" name="name" id="name" placeholder="Password">
+                                <input type="password" name="name" id="name" placeholder="Password" required>
                             </textfield>
                         </div>   
                     </div>
 
                     <div class="checkout-btn-space">
-                        <button id="checkout-btn" class="checkout-btn">Checkout</button>
+                        <button id="checkout-btn" class="checkout-btn" type="submit">Checkout</button>
+                    </div>
+
+                    <div id="overlay" class="overlay">
+                      <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                        <h2>Payment confirmed</h2>
+                        <p>You payment was successful!</p>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -83,66 +91,64 @@
 
 
 
-        
+        <script src="/main.js"></script>
 
         <section class="footer">
-            <div class="footer-container">
-              <div class="footer-row">
-                <div class="footer-col">
-                  <h1>MENTOR</h1>
-                  <ol>
-                    <li>Address: 5 Johnson street</li>
-                    Ikeja Lagos
-                    <br>
-                    <li><b>phone</b>: +2349033957174</li>
-                    <li><b>Email</b>: Mentor@gmail.com</li>
-                    <div class="socials">
-                      <a href="#"><img src="./img/facebook.png" id="socials"></a>
-                      <a href="#"><img src="./img/instagram.png" id="socials"></a>
-                      <a href="#"><img src="./img/twitter.png" id="socials"></a>
-                      <a href="#"><img src="./img/linked in.png" id="socials"></a>
-                    </div>
-                  </ol>
-                </div>
-  
-                <div class="footer-col2">
-                  <H1>Useful Links</H1>
-                  <li><a href="/index.html" id="footer-links">Home</a> </li>
-                  <li><a href="/about.html" id="footer-links">About Us</a> </li>
-                  <li><a href="/courses.html" id="footer-links">Courses</a> </li>
-                  <li><a href="/index.html" id="footer-links">Trainers</a> </li>
-                  <li><a href="/index.html" id="footer-links">Terms of service</a> </li>
-                </div>
-  
-                <div class="footer-col2">
-                  <H1>Our services</H1>
-                  <li><a href="/index.html" id="footer-links">Web development</a> </li>
-                  <li><a href="/about.html" id="footer-links">Graphics Design</a> </li>
-                  <li><a href="/courses.html" id="footer-links">UIUX development</a> </li>
-                  <li><a href="/index.html" id="footer-links">Production Management</a> </li>
-                  <li><a href="/index.html" id="footer-links">Marketing</a> </li>
-                </div>
-  
-                <div class="newsletter">
-                  <h1>Our Newsletter</h1>
-                  <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-  
-                  <div class="newsletter-form">
-                    <form>
-                      <input type="text">
-                    </form>
+          <div class="footer-container">
+            <div class="footer-row">
+              <div class="footer-col">
+                <h1>MENTOR</h1>
+                <ol>
+                  <li>Address: 5 Johnson street</li>
+                  Ikeja Lagos
+                  <br>
+                  <li><b>phone</b>: +2349033957174</li>
+                  <li><b>Email</b>: Mentor@gmail.com</li>
+                  <div class="socials">
+                    <a href="#"><img src="./img/facebook.png" id="socials"></a>
+                    <a href="#"><img src="./img/instagram.png" id="socials"></a>
+                    <a href="#"><img src="./img/twitter.png" id="socials"></a>
+                    <a href="#"><img src="./img/linked in.png" id="socials"></a>
                   </div>
-                 <a href="/pricing.html"><button id="subscribe"> Subscribe!</button></a>
-                </div>
+                </ol>
               </div>
-              <div class="copyright">
-                <br>
-                <br>
-               <p> © Copyright Naseef Ogunsola All Rights Reserved</p>
-              <p>Designed by <h5 id="copyright-name"><a href="https://zenmode281.github.io/social-links-profile-main/"> Naseef Ogunsola</a></h5></p>
+
+              <div class="footer-col2">
+                <H1>Useful Links</H1>
+                <li><a href="/index.html" id="footer-links">Home</a> </li>
+                <li><a href="/about.html" id="footer-links">About Us</a> </li>
+                <li><a href="/courses.html" id="footer-links">Courses</a> </li>
+                <li><a href="/trainers.html" id="footer-links">Trainers</a> </li>
+              </div>
+
+              <div class="footer-col2">
+                <H1>Our services</H1>
+                <li><a href="/index.html" id="footer-links">Web development</a> </li>
+                <li><a href="/about.html" id="footer-links">Graphics Design</a> </li>
+                <li><a href="/courses.html" id="footer-links">UIUX development</a> </li>
+                <li><a href="/marketing.html" id="footer-links">Marketing</a> </li>
+              </div>
+
+              <div class="newsletter">
+                <h1>Our Newsletter</h1>
+                <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+
+                <div class="newsletter-form">
+                  <form>
+                    <input type="text">
+                  </form>
+                </div>
+               <a href="/pricing.html"><button id="subscribe"> Subscribe!</button></a>
               </div>
             </div>
-          </section>
+            <div class="copyright">
+              <br>
+              <br>
+             <p> © Copyright Naseef Ogunsola All Rights Reserved</p>
+            <p>Designed by <h5 id="copyright-name"><a href="https://zenmode281.github.io/social-links-profile-main/"> Naseef Ogunsola</a></h5></p>
+            </div>
+          </div>
+        </section>
     </div>
 </body>
 </html>

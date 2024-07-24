@@ -71,7 +71,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.getElementById('checkout-btn').addEventListener('click', function() {
+  document.getElementById('overlay').style.display = 'block';
+});
 
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+}
 
 
 

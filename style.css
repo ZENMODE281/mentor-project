@@ -62,11 +62,11 @@ body{
   text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar :hover {
   color: #09c9da;
 }
 
-.navbar a.active {
+.navbar:focus {
   color: #09c9da;
 }
 /* HEAD END */
@@ -240,7 +240,7 @@ h2{
 }
 
 #why-us-text{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .small-about-us{
@@ -255,7 +255,10 @@ h2{
 
 #about-head{
   margin-bottom: 20px;
+  color: #09c9da;
 }
+
+
 
 /* **************WHY US END************** */
 
@@ -309,6 +312,7 @@ h2{
 
 .inner-courses:hover {
   transform: scale(1.1);
+  border: solid 3px #09c9da;
 }
 
 .pic-course{
@@ -324,6 +328,14 @@ h2{
 .course-content{
   height: 50%;
   padding: 15px;
+}
+
+#course-link{
+  color:white;
+}
+
+#course-link:hover{
+  color: #09c9da;
 }
 
 .inner-course-head{
@@ -351,6 +363,14 @@ span{
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
+}
+
+.course-name:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #09c9da;
+  border: solid 1px #09c9da;
+  transition: 0.4s ease;
 }
 
 #description{
@@ -389,6 +409,11 @@ span{
 #heart{
   margin-left: 10px;
 }
+
+#heart:hover{
+  color: pink;
+}
+
 .james{
   margin-left: 10px;
 }
@@ -565,6 +590,14 @@ input{
   cursor: pointer;
 }
 
+
+#subscribe:hover{
+  background-color: white;
+  color: #09c9da;
+  border: #09c9da solid 1px;
+  transition: 0.5s ease;
+}
+
 .copyright{
   width: 100%;
   height: 50%;
@@ -586,6 +619,9 @@ a {
 }
 /* ***********ABOUT PAGE START********** */
 
+#about-section-read-more{
+  width: 100%;
+}
 .aboutpage-container{
   height: 100%;
   width: 100%;
@@ -595,6 +631,8 @@ a {
   height: 300px;
   width: 100%;
   margin-top: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
   background-color: #09c9da;
   color: white;
   text-align: center;
@@ -602,6 +640,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-weight: 500;
 }
 
 
@@ -993,6 +1032,7 @@ li{
   background-color: white;
   color: #09c9da;
   cursor: pointer;
+  border: solid 1px #09c9da;
 }
 
 #course-link{
@@ -1114,6 +1154,10 @@ li{
   border-radius: 5px;
 }
 
+#name:focus{
+  border: solid 2px #09c9da;
+}
+
 .left-horizontal{
   width:40%;
 }
@@ -1140,9 +1184,15 @@ li{
   justify-content: space-between;
 }
 
+input:focus {
+  border: 1px solid #09c9da; 
+}
+
 #card-type{
   height: 50px;
-  width: 200px;
+  width: 390px;
+  border: solid 2px black;
+  border-radius: 5px;
 }
 
 .inner-horizontal1{
@@ -1226,3 +1276,61 @@ li{
 }
 
 
+
+.course-button{
+  width: 100%;
+  margin-top: 50px;
+  border: none;
+  color: white;
+  background-color: #09c9da;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.2s ease;
+  font-size: large;
+}
+
+.course-button:hover{
+  background-color: white;
+  color: #09c9da;
+  border: solid 2px #09c9da;
+  cursor: pointer;
+}
+
+
+#active-nav{
+  color: #09c9da;
+}
+
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  text-align: center;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
