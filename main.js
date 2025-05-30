@@ -1,7 +1,7 @@
 let counters = document.querySelectorAll(".inner-counting-numbers");
 
 counters.forEach((counter, index) => {
-  let goal = [1550, 100, 45, 700][index]; // set goals for each counter
+  let goal = [1550, 100, 45, 700][index];
   let count = 0;
   let interval = setInterval(() => {
     if (count < goal) {
